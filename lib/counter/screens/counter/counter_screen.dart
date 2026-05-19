@@ -43,7 +43,7 @@ await CounterStorageServices.saveCounter(newValue);
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text('you have pushed the button "${_counter}" times:',
+            Text('you have pushed the button "$_counter" times:',
             style: const TextStyle(fontSize: 16),
             ),
             Text('$_counter',
