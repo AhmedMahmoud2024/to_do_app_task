@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:to_do_list_app/counter/screens/counter/counter_screen.dart';
+import 'package:to_do_list_app/to_do_list/to_do_screen/to_do_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,12 +12,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Counter App',
+      title: 'To-Do List',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: CounterScreen(),
+      home: ToDoScreen()
     );
   }
 }
