@@ -43,22 +43,6 @@ Future<void>_addTasks(String title)async{
    await StorageService().saveTasks(_tasks);
 }
 
-Future<void> _toggleTask(int index) async{
- setState(() {
-   _tasks[index]=_tasks[index].copyWith(
-    isCompleted: !_tasks[index].isCompleted
-   );
- });
-
- await StorageService().saveTasks(_tasks);
- }
-
-Future<void> _deleteTask(int index)async{
- setState(() {
-   _tasks.removeAt(index);
- });
- await StorageService().saveTasks(_tasks);
-}
 
   @override
   Widget build(BuildContext context) {
@@ -74,8 +58,6 @@ Future<void> _deleteTask(int index)async{
           return TaskItem(
        key: ValueKey(_tasks[index].id),
        task: _tasks[index],
-       onToggle:()=> _toggleTask(index) ,
-       onDelete: () => _deleteTask(index),
           );
         }
          ),

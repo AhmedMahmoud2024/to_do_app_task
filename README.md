@@ -1,5 +1,5 @@
 # to_do_list_app
-
+to_do app with basic functionality like adding tasks ,displaying tasks on screen and saving locally
 # Local Storage & State Management App 💾
 
 This repository contains my implementation for the Week 2 Flutter Task. The core objective was to move from static user interfaces to dynamic data management, focusing on standard state handling and persistent local storage.
